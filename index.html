@@ -7,9 +7,29 @@
     <link rel="stylesheet" href="index.css">
     <title>JsWebApp</title>
 </head>
-<body>
-    
-    <h1>Website is work in progress still...</h1>
+<body onload="onloadScript()">
+    <div class="topBar"></div>
+    <div class="container">
+        <h1>Website is work in progress still</h1>
+        <h4>there is really nothing to look for here rn :) </h4>
+    </div>
 </body>
-<!-- <script src="./Scripts/"></script> -->
+<script>
+    const heading = document.querySelector('h1')
+    let count = 0
+    const onloadScript = () => {
+        setInterval(changeHeading, 500);
+      
+    }
+    const changeHeading = (params) => {
+        if(count<3){
+            heading.innerHTML += '.'
+            count++
+        }
+        else{
+            count=0
+            heading.innerHTML = 'Website is work in progress still'
+        }    
+    }
+</script>
 </html>
