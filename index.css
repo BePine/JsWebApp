@@ -16,6 +16,9 @@ body{
     width:100%;
     height:1em;
 }
+header{
+    height:5em;
+}
 .container{
     width:50%;
     padding:20px;
@@ -38,3 +41,47 @@ h4{
     text-align:center;
     color:white;
 }
+footer{
+    background: #1a1c20;
+    height:5em;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    color:white;
+    text-align:center;
+    line-height:5em;
+}
+.loadingHover{
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    z-index:1;
+    background:#ffffff2f;
+}
+.ring{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.ring::after{
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: ringAnimation 1.2s linear infinite;
+}
+@keyframes ringAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

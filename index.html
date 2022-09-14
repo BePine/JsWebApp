@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>JsWebApp</title>
-</head>
-<body onload="onloadScript()">
-    <div class="topBar"></div>
-    <div class="container">
-        <h1>Website is work in progress still</h1>
-        <h4>there is really nothing to look for here rn :) </h4>
-    </div>
-</body>
-<script>
-    const heading = document.querySelector('h1')
-    let count = 0
-    const onloadScript = () => {
-        setInterval(changeHeading, 500);
-      
-    }
-    const changeHeading = (params) => {
-        if(count<3){
-            heading.innerHTML += '.'
-            count++
-        }
-        else{
-            count=0
-            heading.innerHTML = 'Website is work in progress still'
-        }    
-    }
-</script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="headerStyle.css">
+		<title>JsWebApp</title>
+	</head>
+	<body onload="onloadScript()">
+        <div class="loadingHover" style="display:none;">
+            <div class="ring"></div>
+        </div>
+		<div class="topBar"></div>
+		<header>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sidePage.html">sidePage</a></li>
+			</ul>
+		</header>
+		<div class="container">
+			<h1>Website is work in progress</h1>
+			<h4>there is really nothing to look for right now :)</h4>
+            <h4>you will be redirected to side page</h4>
+		</div>
+		<footer>Github: github.com/BePine</footer>
+	</body>
+	<script src="./Scripts/Loader.js"></script>
 </html>
