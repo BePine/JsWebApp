@@ -1,5 +1,8 @@
 const heading = document.querySelector('h1')
 const loadingHover = document.querySelector('.loadingHover')
+const container = document.querySelector('.container')
+const node = document.createElement('h4')
+const textNode = document.createTextNode('you will be redirected to side page...')
     let count = 0
     let secCount = 0
     const onloadScript = () => {
@@ -13,10 +16,15 @@ const loadingHover = document.querySelector('.loadingHover')
         }
         else if(secCount===1){
             secCount=0
-            loadingHover.style.display="flex"
+            node.appendChild(textNode)
+            container.appendChild(node)
             setTimeout(() => {
-                window.location.replace('../SidePage/sidePage.html')
+                loadingHover.style.display="flex"
+                setTimeout(() => {
+                    window.location.replace('../SidePage/sidePage.html')
+                }, 600);
             }, 600);
+            
         }
         else{
             count=0

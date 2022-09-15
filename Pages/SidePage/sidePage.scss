@@ -10,21 +10,58 @@
 }
 body{
     background-color: #282c34;
-
 }
 .topBar{
     background: #1a1c20;
     width:100%;
     height:1em;
 }
+.textBlock{
+    color:white;
+    background:#1a1c20;
+    margin-left:5%;
+    padding:20px;
+    top:60vh;
+    min-height:40vh;
+    width:40%;
+    position:absolute;
+
+}
+.textBlockSecond{
+    color:white;
+    background:#1a1c20;
+    margin-left:5%;
+    padding:20px;
+    top:110vh;
+    min-height:40vh;
+    width:40%;
+    position:absolute;
+    
+}
+.textBlockRight{
+    color:white;
+    background:#1a1c20;
+    padding:20px;
+    top:60vh;
+    position: absolute;
+    min-height:100px;
+    width:40%;
+    right:5%;
+    min-height:80vh;
+}
 h2{
     color:white;
     position:absolute;
-    left:45%;
-    top:40%;
+    min-width:10%;
+    text-align:center;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 footer{
     background: #1a1c20;
+    border-top:#282c34 2px solid;
     height:5em;
     width:100%;
     position:fixed;
