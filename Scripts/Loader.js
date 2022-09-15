@@ -15,7 +15,7 @@ const loadingHover = document.querySelector('.loadingHover')
             secCount=0
             loadingHover.style.display="flex"
             setTimeout(() => {
-                window.location.replace('sidePage.html')
+                window.location.replace('../SidePage/sidePage.html')
             }, 600);
         }
         else{
