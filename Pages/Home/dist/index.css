@@ -31,6 +31,8 @@ header {
   left: 0;
   right: 0;
   margin: auto;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -71,7 +73,7 @@ footer {
   align-items: center;
   justify-content: center;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.1843137255);
+  background: #ffffff2f;
 }
 
 .ring {
@@ -89,17 +91,7 @@ footer {
   border-radius: 50%;
   border: 6px solid #fff;
   border-color: #fff transparent #fff transparent;
-  -webkit-animation: ringAnimation 1.2s linear infinite;
-          animation: ringAnimation 1.2s linear infinite;
-}
-
-@-webkit-keyframes ringAnimation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  animation: ringAnimation 1.2s linear infinite;
 }
 
 @keyframes ringAnimation {
@@ -109,4 +101,4 @@ footer {
   100% {
     transform: rotate(360deg);
   }
-}/*# sourceMappingURL=index.css.map */
+}
