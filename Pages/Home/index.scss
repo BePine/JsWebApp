@@ -10,6 +10,9 @@
 }
 body{
     background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .topBar{
     background: #1a1c20;
@@ -53,11 +56,10 @@ footer{
     background: #1a1c20;
     height:5em;
     width:100%;
-    position:fixed;
-    bottom:0;
     color:white;
     text-align:center;
     line-height:5em;
+    margin-top:auto;
 }
 .loadingHover{
     position:fixed;
